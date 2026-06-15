@@ -20,6 +20,7 @@ en:
         - Schalke 04
         - Benfica
         - Galatasaray
+        - Fenerbahce
         - PSV Eindhoven
         - LA Galaxy
         - Paris Saint Germain
@@ -32,6 +33,12 @@ en:
         - AS Monaco
         - Bayer 04 Leverkusen
         - Aston Villa
+        - Bournemouth
+        - Napoli
+        - Newcastle United
+        - FC Zurich
+        - FC Basel
+        - Sheffield United FC
       players:
         - Lionel Messi
         - Gerard Pique
