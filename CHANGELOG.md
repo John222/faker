@@ -1,5 +1,59 @@
 # Changelog
 
+## [v3.8.0](https://github.com/faker-ruby/faker/tree/v3.8.0) (2026-04-16)
+
+* Add Lazy loading config by @stefannibrasil and @thdaraujo in https://github.com/faker-ruby/faker/pull/3244
+
+### Enabling lazy load
+
+This version introduces lazy loading. It means users will only pay for what they use. Faker [loads 2x faster](https://github.com/faker-ruby/faker/blob/main/experiments/lazy_load.md) when it's enabled.
+
+Lazy loading the generators is disabled by default. To enable it, choose one of the configuration options below:
+
+#### 1 - Set lazy load as a Faker Config
+
+`Faker::Config.lazy_loading = true`
+
+#### 2 - Set lazy load as an environment variable
+
+`FAKER_LAZY_LOAD = 1`
+
+We hope you get to see the improvement by enabling it. Please file a bug report for any issues!
+
+Thanks to @jeremyevans for the mentoring, and to @thdaraujo for pairing and code reviews.
+
+**Full Changelog**: https://github.com/faker-ruby/faker/compare/v3.7.1...v3.8.0
+
+-----------------------
+
+## [v3.7.1](https://github.com/faker-ruby/faker/tree/v3.7.1) (2026-04-14)
+
+Thanks to all contributors!
+
+### Drops support for Ruby 3.1
+
+* Drop support for Ruby EOL 3.1 by @stefannibrasil in https://github.com/faker-ruby/faker/pull/3240
+
+### What's changed
+
+* Remove json_schema and public-suffix versions constraint by @stefannibrasil in https://github.com/faker-ruby/faker/pull/3224
+* Added additional football teams by @John222 in https://github.com/faker-ruby/faker/pull/3231
+* Remove duplicate 'Recalled to Life' book title by @gkrimer in https://github.com/faker-ruby/faker/pull/3238
+
+### Update development dependencies
+
+* Bump yard from 0.9.38 to 0.9.40 by @dependabot[bot] in https://github.com/faker-ruby/faker/pull/3237
+* Bump timecop from 0.9.10 to 0.9.11 by @dependabot[bot] in https://github.com/faker-ruby/faker/pull/3236
+* Bump rubocop from 1.85.1 to 1.86.1 by @dependabot[bot] in https://github.com/faker-ruby/faker/pull/3235
+
+### New Contributors
+* @John222 made their first contribution in https://github.com/faker-ruby/faker/pull/3231
+* @gkrimer made their first contribution in https://github.com/faker-ruby/faker/pull/3238
+
+**Full Changelog**: https://github.com/faker-ruby/faker/compare/v3.6.1...v3.7.1
+
+--------------------------------
+
 ## [v3.6.1](https://github.com/faker-ruby/faker/tree/v3.6.1) (2026-03-04)
 
 It's almost Spring time in the Northern hemisphere 🌸 
